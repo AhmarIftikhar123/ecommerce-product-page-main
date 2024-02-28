@@ -165,6 +165,7 @@ main {
   display: block;
 }
 #cart_quantity {
+  display: none;
   justify-content: center;
   position: absolute;
   top: -15%;
