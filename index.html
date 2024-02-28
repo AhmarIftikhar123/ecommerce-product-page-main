@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <!-- External stylesheet link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Page title -->
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <div class="transparent-bg-black"></div>
+    <!-- Main wrapper for the entire content -->
+
+    <main class="wrapper">
+      <!-- Navigation bar section -->
+
+      <nav class="nav-bar flex_x_center">
+        <!-- logo -->
+        <div class="logo flex_x_center">
+          <span class="manu pointer flex_x_center"
+            ><img src="images/icon-menu.svg" alt="menu" id="manu"
+          /></span>
+          <h1>sneakers</h1>
+        </div>
+        <!-- Navigation links section -->
+        <nav class="list_show">
+          <ul>
+            <li><a href="#" class="pointer transition">Collections</a></li>
+            <li><a href="#" class="pointer transition">Men</a></li>
+            <li><a href="#" class="pointer transition">Women</a></li>
+            <li><a href="#" class="pointer transition">About</a></li>
+            <li><a href="#" class="pointer transition">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- Cart container  -->
+        <div class="cart_container flex_x_center">
+          <!-- cart -->
+          <img
+            src="images/icon-cart.svg"
+            alt="Cart icon"
+            id="cart-img"
+            class="pointer transition"
+          />
+          <!-- avatar -->
+          <img
+            src="images/image-avatar.png"
+            alt="User avatar"
+            class="user-avatar pointer"
+          />
+          <!-- product-details for displaying product details below the cart img -->
+          <!-- cart-box -->
+          <div class="cart-box">
+            <span class="cart-title">Cart</span>
+            <!-- cart-empty disply when cart is empty  -->
+            <div class="cart-empty">
+              <p>Your cart is empty.</p>
+            </div>
+
+            <div class="cart_procuct_info_wrapper">
+              <div class="cart-item flex_x_center">
+                <img
+                  src="images/image-product-1-thumbnail.jpg"
+                  alt="Product image"
+                  class="cart-item-image"
+                />
+                <div class="cart-item-details">
+                  <p class="cart-item-description">
+                    Fall Limited Edition Sneakers
+                  </p>
+                  <div class="cart-item-price">
+                    <span class="cart-item-price-original"
+                      >$125.00 x <span id="productQuantity">3</span></span
+                    >
+                    <span class="cart-item-price-final">$375.00</span>
+                  </div>
+                </div>
+                <img
+                  src="images/icon-delete.svg"
+                  alt="cart"
+                  class="transition pointer"
+                  id="deleteCartItem"
+                />
+              </div>
+            </div>
+            <button class="cart-box-btn transition pointer">
+              Checkout Now
+            </button>
+          </div>
+
+          <span id="cart_quantity" class="flex_x_center">0</span>
+        </div>
+      </nav>
+      <!-- Product showcase section for mobile-->
+
+      <div class="product-image-container">
+        <img
+          src="images/icon-close.svg"
+          alt="close_img"
+          class="transition pointer"
+          id="close_img"
+        />
+        <div class="product-navigation">
+          <!-- left-arrow -->
+          <button
+            class="navigation-arrow navigation-left pointer"
+            aria-label="Previous image"
+          >
+            <img src="images/icon-previous.svg" alt="Previous arrow icon" />
+          </button>
+          <img
+            src="images/image-product-1.jpg"
+            alt="Product hero image"
+            class="product-hero-img"
+          />
+          <!-- right-arrow -->
+          <button
+            class="navigation-arrow navigation-right pointer"
+            aria-label="Next image"
+            data-nextimg="true"
+          >
+            <img src="images/icon-next.svg" alt="Next arrow icon" />
+          </button>
+        </div>
+        <!-- for mobile && upper layer design -->
+        <div class="product-thumbnails upper_layer">
+          <img
+            src="images/image-product-1-thumbnail.jpg"
+            alt="Product thumbnail 1"
+            class="product-thumbnail"
+          />
+          <img
+            src="images/image-product-2-thumbnail.jpg"
+            alt="Product thumbnail 2"
+            class="product-thumbnail"
+          />
+          <img
+            src="images/image-product-3-thumbnail.jpg"
+            alt="Product thumbnail 3"
+            class="product-thumbnail"
+          />
+          <img
+            src="images/image-product-4-thumbnail.jpg"
+            alt="Product thumbnail 4"
+            class="product-thumbnail"
+          />
+        </div>
+      </div>
+      <!--End of Product showcase section for mobile-->
+
+      <!-- Product showcase section -->
+      <section class="product-showcase">
+        <!-- Product image container with hero image  -->
+        <div class="product-image">
+          <img
+            src="images/image-product-1.jpg"
+            alt="Product hero image"
+            class="product-hero-img desktopHero_img transition pointer"
+          />
+          <!-- product-thumbnails -->
+          <div class="product-thumbnails1">
+            <img
+              src="images/image-product-1-thumbnail.jpg"
+              alt="Product thumbnail 1"
+              class="product-thumbnail pointer"
+            />
+            <img
+              src="images/image-product-2-thumbnail.jpg"
+              alt="Product thumbnail 2"
+              class="product-thumbnail pointer"
+            />
+            <img
+              src="images/image-product-3-thumbnail.jpg"
+              alt="Product thumbnail 3"
+              class="product-thumbnail pointer"
+            />
+            <img
+              src="images/image-product-4-thumbnail.jpg"
+              alt="Product thumbnail 4"
+              class="product-thumbnail pointer"
+            />
+          </div>
+        </div>
+        <!-- Product details container -->
+        <div class="product-details">
+          <h4>Sneaker Company</h4>
+          <h2 class="product-name">Fall Limited Edition Sneakers</h2>
+          <p class="product-description">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they'll withstand everything
+            the weather can offer.
+          </p>
+          <!-- Product price details -->
+
+          <div class="product-price flex_x_center_y_sp_bw">
+            <div class="price-final flex_x_center">
+              <span class="final-price-amount">$125.00</span>
+              <span class="price-discount">
+                <span class="discount-amount">-50%</span>
+              </span>
+            </div>
+            <span class="original-price-amount">$250.00</span>
+          </div>
+          <!-- Product quantity control and add to cart button -->
+          <div class="product-quantity">
+            <div class="product-quantity-container flex_x_center">
+              <!-- minus img -->
+              <span class="quantity-decrease flex_x_center pointer transition">
+                <img src="images/icon-minus.svg" alt="Decrease quantity" />
+              </span>
+              <input
+                type="number"
+                min="1"
+                max="9"
+                value="0"
+                id="quantity-input"
+                readonly
+              />
+              <!-- plus img -->
+              <span class="quantity-increase flex_x_center pointer transition">
+                <img
+                  src="images/icon-plus.svg"
+                  alt="Increase quantity pointer"
+                  data-increment="plus"
+                />
+              </span>
+            </div>
+            <!-- Add to cart button -->
+            <button class="add-to-cart flex_x_center pointer transition">
+              <img src="images/icon-cart.svg" alt="cart" />
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- External JavaScript file -->
+    <script src="script.js"></script>
+    <script src="gsapAnimation.js"></script>
+  </body>
+</html>
