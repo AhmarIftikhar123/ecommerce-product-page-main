@@ -113,7 +113,7 @@ main {
 }
 
 .cart-empty {
-  display: none;
+  display: block;
 }
 
 .cart-empty p {
@@ -157,6 +157,7 @@ main {
 .cart-box-btn {
   width: 100%;
   margin-block: 1.5rem;
+  display:none;
 }
 .cart-title {
   font-size: 1.5rem;
